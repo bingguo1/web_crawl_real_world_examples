@@ -1,0 +1,47 @@
+review:
+    css: 'div.a-row div.a-section.celwidget'
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        customerName:
+            css: span.a-profile-name
+            xpath: null
+            type: Text
+        reviewTitle:
+            css: 'a.a-size-base span'
+            xpath: null
+            type: Text
+        reviewBody:
+            css: div.a-row.a-spacing-small.review-data
+            xpath: null
+            type: Text
+        reviewDateLocation:
+            css: span.a-size-base.a-color-secondary
+            xpath: null
+            type: Text
+        modelName:
+            css: a.a-size-mini
+            xpath: null
+            type: Text
+        stars:
+            css: 'div.a-row:nth-of-type(2) a.a-link-normal:nth-of-type(1)'
+            xpath: null
+            type: Attribute
+            attribute: title
+        nFoundHelpful:
+            css: 'span.cr-vote span.a-size-base'
+            xpath: null
+            type: Text
+        otherCountryReviewTitle:
+            css: 'span.a-size-base.review-title span'
+            xpath: null
+            type: Text
+        otherCountryStars:
+            css: div.a-row.a-spacing-none
+            xpath: null
+            type: Text
+nextPage:
+    css: 'li.a-last a'
+    xpath: null
+    type: Link
